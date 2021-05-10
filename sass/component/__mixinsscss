@@ -1,0 +1,13 @@
+@mixin overallFonts {
+
+    
+    color: rgb(235, 235, 235);
+    font-size: 1.6rem;
+
+    
+}
+
+@mixin overallpara{
+    color: rgb(194, 194, 194);
+    font-weight: 300;
+}

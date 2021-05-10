@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap");
+.container {
+  height: 100vh;
+  background-color: red;
+  display: flex; }
+  .container__left {
+    width: 25rem;
+    background-color: black; }
+  .container__right {
+    background-color: #303030;
+    width: 30rem;
+    padding: 1.5rem; }
+  .container__middle {
+    width: 105rem;
+    background-image: linear-gradient(#252525, black); }
+
+.container__left {
+  padding: 1rem; }
+  .container__left__dots {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 3rem;
+    margin-bottom: 1rem; }
+    .container__left__dots ion-icon {
+      margin-left: 1.2rem; }
+  .container__left__menus .menu {
+    display: flex;
+    padding: 1rem 1.8rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    border-radius: .5rem;
+    transition: color .2s ease; }
+    .container__left__menus .menu:nth-of-type(3) {
+      margin-bottom: 2rem; }
+    .container__left__menus .menu--active {
+      background-color: gray; }
+    .container__left__menus .menu:hover {
+      color: white; }
+    .container__left__menus .menu .icon {
+      font-size: 2rem;
+      margin-right: 1.5rem; }
+      .container__left__menus .menu .icon--special {
+        padding: .5rem;
+        height: 3rem;
+        border-radius: .5rem; }
+      .container__left__menus .menu .icon--blue {
+        background-color: #cccccc;
+        color: black; }
+      .container__left__menus .menu .icon--gray {
+        background-image: linear-gradient(to right bottom, #070796, #929292); }
+  .container__left__divider {
+    margin-top: 1.5rem;
+    height: .1rem;
+    background-color: #505050; }
+
+.container__right h2 {
+  color: #ebebeb;
+  font-size: 1.6rem;
+  margin-top: 4rem; }
+
+.container__right p {
+  font-size: 1.4rem;
+  color: #c2c2c2;
+  font-weight: 300;
+  margin: 1.8rem 0rem;
+  color: #d4d4d4; }
+
+.container__right button {
+  border: 1px solid #228fb9;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  background-color: #228fb9;
+  letter-spacing: 0.2px;
+  width: 100%; }
+  .container__right button:hover {
+    transform: scale(1.05); }
+
+.container__right span {
+  display: inline-block;
+  margin-top: 1.8rem;
+  font-size: 1.2rem;
+  color: #929292;
+  font-weight: 500; }
+
+.container__middle__topnav {
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  transition: background-color .5s ease; }
+  .container__middle__topnav .landrbutton {
+    font-size: 3.5rem;
+    display: inline-block;
+    color: #494949; }
+  .container__middle__topnav .updateButton .button--upgrade {
+    margin-right: 4rem;
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    letter-spacing: 0.2px; }
+    .container__middle__topnav .updateButton .button--upgrade:hover {
+      transform: scale(1.1); }
+  .container__middle__topnav .updateButton .button--account {
+    border: 1px solid transparent;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    letter-spacing: 0.2px;
+    display: inline-block; }
+    .container__middle__topnav .updateButton .button--account:hover {
+      background-color: #353535; }
+
+.Songplaying {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color: #252525;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+  .Songplaying__about {
+    display: flex;
+    align-items: center;
+    width: 25%; }
+    .Songplaying__about .images {
+      height: 60px;
+      width: 60px;
+      margin: 0rem 2rem; }
+      .Songplaying__about .images img {
+        height: 100%;
+        width: 100%; }
+    .Songplaying__about .icon {
+      margin-left: 2rem;
+      font-size: 2rem; }
+  .Songplaying__status {
+    width: 50%; }
+    .Songplaying__status .required {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .Songplaying__status .required .lessimp, .Songplaying__status .required .change {
+        font-size: 2.5rem;
+        margin-right: 2rem; }
+      .Songplaying__status .required .musicplay {
+        font-size: 4rem;
+        margin-right: 2rem; }
+    .Songplaying__status .timer {
+      margin-top: .8rem;
+      transform: translateX(150px);
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: 500; }
+      .Songplaying__status .timer span {
+        height: .2rem;
+        width: 40rem;
+        background-color: gray;
+        margin: 0 .5rem; }
+  .Songplaying__volume {
+    font-size: 3rem;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    display: flex;
+    align-items: center; }
+    .Songplaying__volume ion-icon {
+      margin-right: 2rem; }
+
+.types {
+  padding: 0rem 2.5rem;
+  height: 90vh;
+  overflow-Y: scroll; }
+
+.categories {
+  margin-bottom: 4rem; }
+  .categories h1 {
+    font-weight: 500;
+    color: white;
+    margin-bottom: 2.5rem;
+    margin-left: 1rem; }
+
+.songs__box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .songs__box__content {
+    margin: .5rem;
+    padding: 1.5rem;
+    background-color: #2b2b2b;
+    width: 224px;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    overflow: hidden; }
+    .songs__box__content .imageBox {
+      height: 200px; }
+      .songs__box__content .imageBox img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%; }
+    .songs__box__content .artistname {
+      margin-top: 1rem;
+      font-size: 1.4rem;
+      color: #c2c2c2;
+      font-weight: 300;
+      color: #d4d4d4;
+      line-height: 1.5; }
+    .songs__box__content .source {
+      font-size: 1.2rem;
+      margin-top: .2rem;
+      color: #929292;
+      font-weight: 500;
+      line-height: 1.1; }
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins";
+  line-height: 1.2;
+  color: #cfcfcf;
+  font-weight: 100;
+  position: relative; }

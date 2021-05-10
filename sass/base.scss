@@ -1,0 +1,32 @@
+@import "./component/__mixinsscss";
+@import "./component/_button";
+@import "./_navbar";
+@import "./_container";
+@import "./_songPlay";
+@import "./_categoryCard";
+
+//google fonts 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+
+*,*::before,*::after{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    
+    font-size: 1.6rem;
+    font-family:"Poppins";
+    line-height: 1.2;
+    color:#cfcfcf;
+    font-weight: 100;
+    position: relative;
+}
+

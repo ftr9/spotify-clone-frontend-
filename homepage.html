@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul's spotify clone</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+
+    <div class="Songplaying">
+        
+        <div class="Songplaying__about">
+
+            <div class="images">
+
+                <img src="./images/tobu.jpg" alt="tobu songs">
+                
+            </div>
+
+            <div class="content">
+
+                <h2 style="font-size: 1.6rem;">Tobu</h2>
+                <h3 style="font-size: 1.2rem;">Artist</h3>
+
+            </div>
+
+            <div class="icon">
+
+                <ion-icon name="heart-outline"></ion-icon>
+
+            </div>
+
+        </div>
+
+        <div class="Songplaying__status">
+
+            <div class="required">
+
+                <ion-icon name="shuffle-outline" class="lessimp"></ion-icon>
+                <ion-icon name="play-skip-back-sharp" class="change"></ion-icon>
+                <ion-icon name="play-circle-sharp" class="musicplay"></ion-icon>
+                <ion-icon name="play-skip-forward-sharp" class="change"></ion-icon>
+                <ion-icon name="repeat-sharp" class="lessimp"></ion-icon>
+                
+
+            </div>
+
+            <div class="timer">
+
+                <p>00:00</p>
+                <span></span>
+                <p>3:55</p>
+
+            </div>
+
+
+        </div>
+
+        <div class="Songplaying__volume">
+
+            <ion-icon name="list-outline"></ion-icon>
+            <ion-icon name="laptop-outline"></ion-icon>
+            <ion-icon name="volume-high-outline"></ion-icon>
+
+        </div>
+        
+    </div>
+    
+
+    <div class="container">
+
+
+        <div class="container__left">
+
+            <div class="container__left__dots">
+
+                <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+
+            </div>
+
+            <div class="container__left__menus">
+
+                <div class="menu menu--active">
+                    
+                    <div class="icon">
+                        <ion-icon name="home-sharp"></ion-icon>
+                    </div>
+                    <div class="content">
+                        Home
+                    </div>
+
+                </div>
+
+                <div class="menu">
+                    
+                    <div class="icon">
+                        <ion-icon name="search-sharp"></ion-icon>
+                    </div>
+                    <div class="content">
+                        Search
+                    </div>
+
+                </div>
+
+
+                <div class="menu">
+                    
+                    <div class="icon">
+                        <ion-icon name="library-sharp"></ion-icon>
+                    </div>
+                    <div class="content">
+                        Library
+                    </div>
+
+                </div>
+
+
+                <div class="menu">
+                    
+                    <div class="icon icon--special icon--blue">
+                        <ion-icon name="add-sharp"></ion-icon>
+                    </div>
+                    <div class="content">
+                        create playlist
+                    </div>
+
+                </div>
+
+
+                <div class="menu">
+                    
+                    <div class="icon icon--special  icon--gray">
+                        <ion-icon name="heart-sharp"></ion-icon>
+                    </div>
+                    <div class="content">
+                        Liked songs
+                    </div>
+
+                </div>
+
+                <div class="container__left__divider"></div>
+
+
+            </div>
+
+        </div>
+        <div class="container__middle">
+
+            <div class="container__middle__topnav">
+
+                <div class="landrbutton">
+                    <ion-icon name="chevron-back-circle"></ion-icon>
+                    <ion-icon name="chevron-forward-circle"></ion-icon>
+                </div>
+
+                <div class="updateButton">
+
+                    <button class="button--upgrade">
+
+                        UPGRADE
+
+                    </button>
+
+                    <button class="button--account">
+                        <ion-icon name="person-circle-outline"></ion-icon> rahul <ion-icon name="caret-down-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <section class="types">
+
+                <div class="categories">
+
+                    <h1>Recently played</h1>
+
+                   
+
+                    <div class="songs__box">
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/tobu.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Tobu</p>
+                            <p class="source">Artist</p>
+
+                        </div>
+
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/djsnake.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">DJ snake</p>
+                            <p class="source">Artist and singer</p>
+
+                        </div>
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/sakhira.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Sakhira</p>
+                            <p class="source">Artist</p>
+
+                        </div>
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/argit.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Arjit Singh</p>
+                            <p class="source">Singer</p>
+
+                        </div>
+
+                       
+
+                    </div>
+
+                    
+
+                </div>
+
+
+
+                <div class="categories">
+
+                    <h1>Made for you</h1>
+
+                   
+
+                    <div class="songs__box">
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/classicalMusic.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Classical Songs</p>
+                            <p class="source">Extremely loving top 50 classical songs</p>
+
+                        </div>
+
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/loveSongs.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Romantic songs</p>
+                            <p class="source">All the collections of Romantic songs till now</p>
+
+                        </div>
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/popSongs.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">PoP songs</p>
+                            <p class="source">Top handpicked pop songs from decades(Volume 1)</p>
+
+                        </div>
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/summercollection.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Summer songs</p>
+                            <p class="source">Best summer songs for hotels and bars</p>
+
+                        </div>
+
+                       
+
+                    </div>
+
+                    
+
+                </div>
+
+
+
+
+                <div class="categories">
+
+                    <h1>Classical songs</h1>
+
+                   
+
+                    <div class="songs__box">
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/demi.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Demi Lovato</p>
+                            <p class="source">Artist</p>
+
+                        </div>
+
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/summercollection.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Summer collections</p>
+                            <p class="source">Best summer collection's till now</p>
+
+                        </div>
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/loveSongs.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Relationship songs</p>
+                            <p class="source">Top relationship goals songs</p>
+
+                        </div>
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/tobu.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Tobu</p>
+                            <p class="source">Artist</p>
+
+                        </div>
+
+                       
+
+                    </div>
+
+                    
+
+                </div>
+
+
+
+
+                <div class="categories">
+
+                    <h1>study Songs</h1>
+
+                   
+
+                    <div class="songs__box">
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/studyone.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Effective songs</p>
+                            <p class="source">This types of songs makes you productive all Day</p>
+
+                        </div>
+
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/studytwo.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Motivating Songs</p>
+                            <p class="source">Songs to motivate you when ever you feel a sense of quitting something</p>
+
+                        </div>
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/studythree.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Chill and relax songs</p>
+                            <p class="source">Make you stressful day relaxed</p>
+
+                        </div>
+
+                        <div class="songs__box__content">
+
+                            <div class="imageBox">
+                                <img src="./images/studyfour.jpg" alt="tobu image">
+                            </div>
+
+                            <p class="artistname">Songs to boost power your mathematics solving skills</p>
+                            <p class="source">Artist</p>
+
+                        </div>
+
+                       
+
+                    </div>
+
+                    
+
+                </div>
+
+
+            </section>
+
+
+
+        </div>
+        <div class="container__right">
+
+            <h2>Friend Activity</h2>
+
+            <p>Connect with facebook to see what your friends are playing</p>
+
+            <button>
+                <ion-icon name="logo-facebook"></ion-icon> CONNECT WITH FACEBOOK
+            </button>
+
+
+            <span>
+                We'll never post anything without your permission.Show and hide Friends Activity from Settings
+            </span>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

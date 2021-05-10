@@ -1,0 +1,86 @@
+.Songplaying{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color:rgb(37, 37, 37);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    &__about{
+
+        display: flex;
+        align-items: center;
+        width: 25%;
+        .images{
+            height: 60px;
+            width: 60px;
+            margin:0rem 2rem;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .icon{
+            margin-left: 2rem;
+            font-size: 2rem;
+        }
+
+    }
+
+    &__status{
+
+
+        width: 50%;
+
+        .required{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .lessimp,.change{
+                font-size: 2.5rem;
+                margin-right: 2rem;
+            }
+
+            .musicplay{
+                font-size: 4rem;
+                margin-right: 2rem;
+            }
+
+            
+        }
+
+        .timer{
+            margin-top: .8rem;
+            transform: translateX(150px);
+            span{
+                height: .2rem;
+                width: 40rem;
+                background-color: gray;
+                margin: 0 .5rem;
+            }
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+    }
+
+    &__volume{
+        font-size: 3rem;
+        justify-content:flex-end;
+        align-items:center;
+        width: 25%;
+        display: flex;
+        align-items: center;
+
+        ion-icon{
+            margin-right: 2rem;
+        }
+    }
+}
+

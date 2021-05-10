@@ -1,0 +1,181 @@
+
+.container{
+
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    &__left{
+
+        width: 25rem;
+        background-color: black;
+        
+    }
+
+    &__right{
+
+        background-color: rgb(48, 48, 48);
+        width: 30rem;
+        padding: 1.5rem;
+      
+    }
+
+    &__middle{
+        width: 105rem;
+        background-image: linear-gradient(rgb(37, 37, 37),black);
+    
+    }
+
+}
+
+
+.container__left{
+
+    padding: 1rem;
+    &__dots{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        ion-icon{
+            margin-left: 1.2rem;
+        }
+    }
+
+    &__menus{
+
+        .menu{
+
+            &:nth-of-type(3){
+                margin-bottom: 2rem;
+            }
+
+            &--active{
+                background-color: gray;
+            }
+
+            &:hover{
+                color: white;
+            }
+
+            display: flex;
+            padding: 1rem 1.8rem;
+            font-size: 1.8rem;
+            font-weight: 300;
+            border-radius: .5rem;
+            transition: color .2s ease;
+
+
+            .icon{
+                font-size: 2rem;
+                margin-right: 1.5rem;
+
+                &--special{
+
+                    padding: .5rem;
+                    height:3rem;
+                    border-radius: .5rem;
+
+                }
+                &--blue{
+
+                    background-color: rgb(204, 204, 204);
+                    color: black;
+
+                }
+                &--gray{
+
+                    background-image:linear-gradient(to right bottom,rgb(7, 7, 150),rgb(146, 146, 146));
+
+                }
+            }
+        }
+
+    }
+
+    &__divider{
+        margin-top: 1.5rem;
+        height: .1rem;
+        background-color: rgb(80, 80, 80);
+    }
+
+}
+
+
+
+.container__right{
+
+
+    h2{
+        @include overallFonts;
+        margin-top: 4rem;
+    }
+    p{
+        font-size: 1.4rem;
+        @include overallpara;
+        margin: 1.8rem 0rem;
+        color: rgb(212, 212, 212)
+
+    }
+
+    button{
+
+        @include button(rgb(34, 143, 185),rgb(34,143,185));
+        width: 100%;
+        &:hover{
+            transform: scale(1.05);
+        }
+        
+
+    }
+
+
+    span{
+        display: inline-block;
+        margin-top: 1.8rem;
+        font-size: 1.2rem;
+        color: rgb(146, 146, 146);
+        font-weight:500;
+    }
+        
+    
+
+}
+
+
+.container__middle__topnav{
+
+    background-color:rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    padding:   1rem 3rem;
+    transition: background-color .5s ease;
+    .landrbutton{
+        font-size: 3.5rem;
+        display: inline-block;
+        color:rgb(73, 73, 73);
+    }
+    
+    .updateButton{
+
+        .button--upgrade{
+
+            margin-right: 4rem;
+            @include button(black,white);
+            &:hover{
+                transform: scale(1.1);
+            }
+
+        }
+        .button--account{
+
+            @include button(black,transparent);
+            display: inline-block;
+            &:hover{
+                background-color: rgb(53, 53, 53);
+            }
+
+        }
+
+    }
+
+}
